@@ -1,0 +1,4 @@
+target 'MSFlightMapView' do
+  use_frameworks!
+  pod 'GoogleMaps'
+end
