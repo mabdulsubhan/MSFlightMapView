@@ -19,6 +19,7 @@
 		0D9DFD6D2012136D0087DC1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD4F20120E670087DC1E /* LaunchScreen.storyboard */; };
 		0D9DFD6E2012136F0087DC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD5120120E670087DC1E /* Main.storyboard */; };
 		0D9DFD702012148C0087DC1E /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD6F2012145E0087DC1E /* style.json */; };
+		0D9DFD74201245D00087DC1E /* MSFlightMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DFD73201245D00087DC1E /* MSFlightMapView.swift */; };
 		852F44BD793E5FBD7821EC17 /* Pods_MSFlightMapView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1627C7D66042C4C7C54CEFA /* Pods_MSFlightMapView.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		0D9DFD6220120FA50087DC1E /* airplaneicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airplaneicon@2x.png"; sourceTree = "<group>"; };
 		0D9DFD6320120FA50087DC1E /* airplaneicon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airplaneicon@3x.png"; sourceTree = "<group>"; };
 		0D9DFD6F2012145E0087DC1E /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+		0D9DFD73201245D00087DC1E /* MSFlightMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFlightMapView.swift; sourceTree = "<group>"; };
 		94D9BA7F0DB73D3632101BAE /* Pods-MSFlightMapView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFlightMapView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSFlightMapView/Pods-MSFlightMapView.release.xcconfig"; sourceTree = "<group>"; };
 		A1627C7D66042C4C7C54CEFA /* Pods_MSFlightMapView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSFlightMapView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CF9B9282DE212F6048F135 /* Pods-MSFlightMapView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFlightMapView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSFlightMapView/Pods-MSFlightMapView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				0D9DFD6020120FA50087DC1E /* Assets */,
 				0D9DFD5A20120F030087DC1E /* MSFlight.swift */,
 				0D9DFD5B20120F030087DC1E /* MSFlightView.swift */,
+				0D9DFD73201245D00087DC1E /* MSFlightMapView.swift */,
 			);
 			path = MSFlightMapView;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9DFD74201245D00087DC1E /* MSFlightMapView.swift in Sources */,
 				0D9DFD69201213650087DC1E /* AppDelegate.swift in Sources */,
 				0D9DFD65201211FB0087DC1E /* MSFlightView.swift in Sources */,
 				0D9DFD6B201213650087DC1E /* ViewController.swift in Sources */,
