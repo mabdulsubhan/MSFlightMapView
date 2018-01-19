@@ -1,4 +1,5 @@
-![Animation](./msflightViewdemo.gif){:width="20%"}
+<img src="./msflightViewdemo.gif" width="20%">
+
 # MSFlightMapView
 [![CocoaPods](https://img.shields.io/cocoapods/p/MSFlightMapView.svg)](https://cocoapods.org/pods/MSFlightMapView)
 [![CocoaPods](https://img.shields.io/cocoapods/v/MSFlightMapView.svg)](http://cocoapods.org/pods/MSFlightMapView)
