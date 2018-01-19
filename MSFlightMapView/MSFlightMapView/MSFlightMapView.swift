@@ -15,7 +15,7 @@ open class MSFlightMapView: UIView {
     var mapView: GMSMapView?
     var flightViews: [MSFlightView] = [MSFlightView]()
     
-    init(withFrame frame:CGRect, andFlights flights:[MSFlight]) {
+    public init(withFrame frame:CGRect, andFlights flights:[MSFlight]) {
         super.init(frame: frame)
         
         // Setting MapView
