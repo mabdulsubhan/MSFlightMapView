@@ -22,11 +22,18 @@ class MSFlightView: NSObject {
     var i: UInt = 0
     var timer: Timer!
     
+    public var pathColor:UIColor = UIColor()
+    public var pathSecondaryColor:UIColor = UIColor()
+    public var airplaneColor:UIColor = UIColor()
+
     init(withMapView mapMainView:GMSMapView, andFlight flight:MSFlight) {
         
         super.init()
         
         mapView = mapMainView
+        self.pathColor = flight.pathPrimaryColor
+        self.pathSecondaryColor = flight.pathSecondaryColor
+        self.airplaneColor = flight.airplaneColor
         
         let departure:CLLocationCoordinate2D = flight.departure
         let arrival:CLLocationCoordinate2D = flight.arrival
@@ -60,7 +67,8 @@ class MSFlightView: NSObject {
         
         // Setting marker
         marker = GMSMarker()
-        marker.iconView = UIImageView(image: UIImage(named: "airplaneicon"))
+        marker.iconView = UIImageView(image: UIImage(named: "airplaneicon")?.withRenderingMode(.alwaysTemplate))
+        marker.iconView?.tintColor = airplaneColor
         marker.position = self.path.coordinate(at: 0)
         marker.map = mapView
         
@@ -94,7 +102,7 @@ class MSFlightView: NSObject {
         self.marker.iconView?.alpha = 1
         
         self.polyline.path = self.path
-        self.polyline.strokeColor = UIColor(red: 211/255.0, green: 31/255.0, blue: 56/255.0, alpha: 0.25)
+        self.polyline.strokeColor = pathSecondaryColor
         self.polyline.strokeWidth = 2
         self.polyline.geodesic = true
         self.polyline.map = self.mapView
@@ -110,7 +118,7 @@ class MSFlightView: NSObject {
             
             self.animationPath.add(self.path.coordinate(at: self.i))
             self.animationPolyline.path = self.animationPath
-            self.animationPolyline.strokeColor = UIColor(red: 211/255.0, green: 31/255.0, blue: 56/255.0, alpha: 1)
+            self.animationPolyline.strokeColor = pathColor
             self.animationPolyline.strokeWidth = 2
             self.animationPolyline.geodesic = true
             self.animationPolyline.map = self.mapView

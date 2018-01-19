@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 import GoogleMaps
 
-class MSFlightMapView: UIView {
+open class MSFlightMapView: UIView {
     
     var mapView: GMSMapView?
+    var flightViews: [MSFlightView] = [MSFlightView]()
     
     init(withFrame frame:CGRect, andFlights flights:[MSFlight]) {
         super.init(frame: frame)
-        
         
         // Setting MapView
         let camera = GMSCameraPosition.camera(withLatitude: (flights.first?.departure.latitude)!, longitude: (flights.first?.departure.longitude)!, zoom: 5.0)
@@ -35,23 +35,12 @@ class MSFlightMapView: UIView {
         self.addSubview(mapView!)
         
         for flight in flights {
-            _ = MSFlightView.init(withMapView: mapView!, andFlight: flight)
+            flightViews.append(MSFlightView.init(withMapView: mapView!, andFlight: flight))
         }
-        
-        
-        /*
-         // Setting screen bounds to fit gmspolyline
-         var bounds = GMSCoordinateBounds()
-         for index in 0...path.count() {
-         bounds = bounds.includingCoordinate(path.coordinate(at: index))
-         }
-         mapView?.animate(with: GMSCameraUpdate.fit(bounds))
-         */
-        
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+
 }

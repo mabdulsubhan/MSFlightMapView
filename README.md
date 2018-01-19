@@ -22,7 +22,7 @@ pod 'MSFlightMapView'
 
 1. To use MSFlightMapView, you would be needing to create MSFlight objects first like :
 ```
-let EnglandToMadagascar:MSFlight = MSFlight.init(withDeparture: CLLocationCoordinate2D(latitude:53.206389, longitude: -0.861111), andArrival: CLLocationCoordinate2D(latitude:-19.002846, longitude: 46.460938))
+let EnglandToMadagascar:MSFlight = MSFlight.init(withDeparture: CLLocationCoordinate2D(latitude:53.206389, longitude: -0.861111), andArrival: CLLocationCoordinate2D(latitude:-19.002846, longitude: 46.460938), andPathPrimaryColor: UIColor.red, andPathSecondaryColor: UIColor.brown, andAirplaneColor: UIColor.black)
 ```
 2. Then set you view's subclass to MSFlightMapView and initialize it with the array of MSFlight objects
 ```
