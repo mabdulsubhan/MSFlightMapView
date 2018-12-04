@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				0D2484B221B5489C00B8DE42 /* Assets.xcassets */,
-				0D2484B421B559AB00B8DE42 /* MSFlight.swift */,
 				0D2484A921B53DDE00B8DE42 /* MSFlightMapView.swift */,
+				0D2484B421B559AB00B8DE42 /* MSFlight.swift */,
 				0D2484AB21B53E6B00B8DE42 /* MSMarkerViewBuilder.swift */,
 				0D2484A521B51B8000B8DE42 /* MSMarkerAnimation.swift */,
 				0D2484B621B69A8B00B8DE42 /* MSPathBuilder.swift */,

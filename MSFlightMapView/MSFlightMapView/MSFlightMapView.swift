@@ -11,19 +11,19 @@ import GoogleMaps
 
 class MSFlightMapView: GMSMapView {
     
-    var pathColor: UIColor = MSConstants.lightGrayColor {
+    var pathColor: UIColor = MSConstants.secondaryColor {
         didSet {
             redraw()
         }
     }
     
-    var markerColor: UIColor = MSConstants.primaryRedColor {
+    var markerColor: UIColor = MSConstants.primaryColor {
         didSet {
             redraw()
         }
     }
     
-    var iconColor: UIColor = MSConstants.primaryRedColor {
+    var iconColor: UIColor = MSConstants.primaryColor {
         didSet {
             redraw()
         }

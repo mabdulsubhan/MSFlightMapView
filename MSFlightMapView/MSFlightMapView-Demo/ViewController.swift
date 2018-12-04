@@ -37,19 +37,9 @@ class ViewController: UIViewController {
         let ankara = CLLocationCoordinate2D(latitude: 39.925533, longitude: 32.866287)
         let karachi = CLLocationCoordinate2D(latitude: 24.946218, longitude: 67.005615)
         let moscow = CLLocationCoordinate2D(latitude: 55.751244, longitude: 37.618423)
-        
-        // Single Flights
-//        let berlinToLondon = MSFlight(withFirstLocation: berlin, withSecondLocation: london)
-//        let ankaraToMoscow = MSFlight(withFirstLocation: ankara, withSecondLocation: moscow, andIconImage: nil, andIconColor: UIColor.red, andPathColor: UIColor.orange, andMarkerColor: UIColor.blue)
-//        self.mapView.flights = [berlinToLondon, ankaraToMoscow]
 
-        // Multi leg flights
-//        let f = MSMultiLegFlight(withLocations: [london, berlin, ankara, karachi, moscow])
-//        self.mapView.flights = f.flights
-        
-        // Connecting flights
-        self.mapView.flights = MSFlight(withFirstLocation: berlin, withSecondLocation: london).connecting(toLocation: ankara).connecting(toLocation: berlin)
-        
+        let flightPlan = MSMultiLegFlight(withLocations: [london, berlin, ankara, karachi, moscow])
+        self.mapView.flights = flightPlan.flights
     }
 }
 
