@@ -10,28 +10,46 @@ import UIKit
 import GoogleMaps
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var mapView: MSFlightMapView!
+    
+    func setupStyling() {
+        let url = Bundle.main.url(forResource: "style", withExtension: "json")!
+        if let style =  try? GMSMapStyle(contentsOfFileURL: url){
+            mapView.mapStyle = style
+        } else {
+            print("The style definition could not be loaded for url : \(url)")
+        }
+    }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let redColor:UIColor = UIColor(red: 211/255.0, green: 31/255.0, blue: 56/255.0, alpha: 1)
-        let redColor2:UIColor = UIColor(red: 211/255.0, green: 31/255.0, blue: 56/255.0, alpha: 0.25)
-
-        let blueColor:UIColor = UIColor(red: 56/255.0, green: 31/255.0, blue: 211/255.0, alpha: 1)
-        let blueColor2:UIColor = UIColor(red: 56/255.0, green: 31/255.0, blue: 211/255.0, alpha: 0.25)
-
-        let blackColor:UIColor = UIColor.black
+        setNeedsStatusBarAppearanceUpdate()
+  
+        setupStyling()
         
-        let EnglandToMadagascar:MSFlight = MSFlight.init(withDeparture: CLLocationCoordinate2D(latitude:53.206389, longitude: -0.861111), andArrival: CLLocationCoordinate2D(latitude:-19.002846, longitude: 46.460938), andPathPrimaryColor: redColor, andPathSecondaryColor: redColor2, andAirplaneColor: blackColor)
-        let KarachiToEngland:MSFlight = MSFlight.init(withDeparture: CLLocationCoordinate2D(latitude:25.183611, longitude: 66.600278), andArrival: CLLocationCoordinate2D(latitude:53.206389, longitude: -0.861111), andPathPrimaryColor: blueColor, andPathSecondaryColor: blueColor2, andAirplaneColor: blackColor)
-        let NorwayToNewyork:MSFlight = MSFlight.init(withDeparture: CLLocationCoordinate2D(latitude:60.4720, longitude: 8.4689), andArrival: CLLocationCoordinate2D(latitude:40.7128, longitude: -73.935242), andPathPrimaryColor: redColor, andPathSecondaryColor: redColor2, andAirplaneColor: blackColor)
-        let BrazilToMoscow:MSFlight = MSFlight.init(withDeparture: CLLocationCoordinate2D(latitude:-22.970722, longitude: -43.182365), andArrival: CLLocationCoordinate2D(latitude:55.751244, longitude: 37.618423), andPathPrimaryColor: blueColor, andPathSecondaryColor: blueColor2, andAirplaneColor: blackColor)
+        let london = CLLocationCoordinate2D(latitude: 51.509865, longitude: -0.118092)
+        let berlin = CLLocationCoordinate2D(latitude: 52.531677, longitude: 13.381777)
+        let ankara = CLLocationCoordinate2D(latitude: 39.925533, longitude: 32.866287)
+        let karachi = CLLocationCoordinate2D(latitude: 24.946218, longitude: 67.005615)
+        let moscow = CLLocationCoordinate2D(latitude: 55.751244, longitude: 37.618423)
         
-        let flights:[MSFlight] = [KarachiToEngland, NorwayToNewyork, EnglandToMadagascar, BrazilToMoscow]
+        // Single Flights
+//        let berlinToLondon = MSFlight(withFirstLocation: berlin, withSecondLocation: london)
+//        let ankaraToMoscow = MSFlight(withFirstLocation: ankara, withSecondLocation: moscow, andIconImage: nil, andIconColor: UIColor.red, andPathColor: UIColor.orange, andMarkerColor: UIColor.blue)
+//        self.mapView.flights = [berlinToLondon, ankaraToMoscow]
+
+        // Multi leg flights
+//        let f = MSMultiLegFlight(withLocations: [london, berlin, ankara, karachi, moscow])
+//        self.mapView.flights = f.flights
         
-        self.view = MSFlightMapView.init(withFrame: self.view.frame, andFlights: flights)
+        // Connecting flights
+        self.mapView.flights = MSFlight(withFirstLocation: berlin, withSecondLocation: london).connecting(toLocation: ankara).connecting(toLocation: berlin)
         
     }
-
 }
 

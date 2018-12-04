@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D9DFD64201211F90087DC1E /* MSFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DFD5A20120F030087DC1E /* MSFlight.swift */; };
-		0D9DFD65201211FB0087DC1E /* MSFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DFD5B20120F030087DC1E /* MSFlightView.swift */; };
-		0D9DFD66201212010087DC1E /* airplaneicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD6120120FA50087DC1E /* airplaneicon.png */; };
-		0D9DFD67201212010087DC1E /* airplaneicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD6220120FA50087DC1E /* airplaneicon@2x.png */; };
-		0D9DFD68201212010087DC1E /* airplaneicon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD6320120FA50087DC1E /* airplaneicon@3x.png */; };
+		0D2484A621B51B8000B8DE42 /* MSMarkerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2484A521B51B8000B8DE42 /* MSMarkerAnimation.swift */; };
+		0D2484A821B51BB600B8DE42 /* Bearing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2484A721B51BB600B8DE42 /* Bearing.swift */; };
+		0D2484AA21B53DDE00B8DE42 /* MSFlightMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2484A921B53DDE00B8DE42 /* MSFlightMapView.swift */; };
+		0D2484AC21B53E6B00B8DE42 /* MSMarkerViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2484AB21B53E6B00B8DE42 /* MSMarkerViewBuilder.swift */; };
+		0D2484AF21B53EC000B8DE42 /* MSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2484AE21B53EC000B8DE42 /* MSConstants.swift */; };
+		0D2484B121B542A000B8DE42 /* UIImage+Fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2484B021B542A000B8DE42 /* UIImage+Fill.swift */; };
+		0D2484B321B5489C00B8DE42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D2484B221B5489C00B8DE42 /* Assets.xcassets */; };
+		0D2484B521B559AB00B8DE42 /* MSFlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2484B421B559AB00B8DE42 /* MSFlight.swift */; };
+		0D2484B721B69A8B00B8DE42 /* MSPathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2484B621B69A8B00B8DE42 /* MSPathBuilder.swift */; };
 		0D9DFD69201213650087DC1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DFD4D20120E670087DC1E /* AppDelegate.swift */; };
 		0D9DFD6A201213650087DC1E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD5320120E670087DC1E /* Info.plist */; };
 		0D9DFD6B201213650087DC1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DFD5420120E670087DC1E /* ViewController.swift */; };
@@ -19,11 +23,19 @@
 		0D9DFD6D2012136D0087DC1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD4F20120E670087DC1E /* LaunchScreen.storyboard */; };
 		0D9DFD6E2012136F0087DC1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD5120120E670087DC1E /* Main.storyboard */; };
 		0D9DFD702012148C0087DC1E /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D9DFD6F2012145E0087DC1E /* style.json */; };
-		0D9DFD74201245D00087DC1E /* MSFlightMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9DFD73201245D00087DC1E /* MSFlightMapView.swift */; };
 		852F44BD793E5FBD7821EC17 /* Pods_MSFlightMapView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1627C7D66042C4C7C54CEFA /* Pods_MSFlightMapView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D2484A521B51B8000B8DE42 /* MSMarkerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMarkerAnimation.swift; sourceTree = "<group>"; };
+		0D2484A721B51BB600B8DE42 /* Bearing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearing.swift; sourceTree = "<group>"; };
+		0D2484A921B53DDE00B8DE42 /* MSFlightMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFlightMapView.swift; sourceTree = "<group>"; };
+		0D2484AB21B53E6B00B8DE42 /* MSMarkerViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSMarkerViewBuilder.swift; sourceTree = "<group>"; };
+		0D2484AE21B53EC000B8DE42 /* MSConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSConstants.swift; sourceTree = "<group>"; };
+		0D2484B021B542A000B8DE42 /* UIImage+Fill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Fill.swift"; sourceTree = "<group>"; };
+		0D2484B221B5489C00B8DE42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D2484B421B559AB00B8DE42 /* MSFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFlight.swift; sourceTree = "<group>"; };
+		0D2484B621B69A8B00B8DE42 /* MSPathBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSPathBuilder.swift; sourceTree = "<group>"; };
 		0D9DFD3720120E200087DC1E /* MSFlightMapView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSFlightMapView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D9DFD4D20120E670087DC1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D9DFD4E20120E670087DC1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -31,13 +43,7 @@
 		0D9DFD5220120E670087DC1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0D9DFD5320120E670087DC1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D9DFD5420120E670087DC1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0D9DFD5A20120F030087DC1E /* MSFlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFlight.swift; sourceTree = "<group>"; };
-		0D9DFD5B20120F030087DC1E /* MSFlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFlightView.swift; sourceTree = "<group>"; };
-		0D9DFD6120120FA50087DC1E /* airplaneicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = airplaneicon.png; sourceTree = "<group>"; };
-		0D9DFD6220120FA50087DC1E /* airplaneicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airplaneicon@2x.png"; sourceTree = "<group>"; };
-		0D9DFD6320120FA50087DC1E /* airplaneicon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "airplaneicon@3x.png"; sourceTree = "<group>"; };
 		0D9DFD6F2012145E0087DC1E /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
-		0D9DFD73201245D00087DC1E /* MSFlightMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSFlightMapView.swift; sourceTree = "<group>"; };
 		94D9BA7F0DB73D3632101BAE /* Pods-MSFlightMapView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFlightMapView.release.xcconfig"; path = "Pods/Target Support Files/Pods-MSFlightMapView/Pods-MSFlightMapView.release.xcconfig"; sourceTree = "<group>"; };
 		A1627C7D66042C4C7C54CEFA /* Pods_MSFlightMapView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSFlightMapView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4CF9B9282DE212F6048F135 /* Pods-MSFlightMapView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSFlightMapView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MSFlightMapView/Pods-MSFlightMapView.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,8 +91,8 @@
 		0D9DFD4C20120E670087DC1E /* MSFlightMapView-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				0D9DFD4D20120E670087DC1E /* AppDelegate.swift */,
 				0D9DFD4E20120E670087DC1E /* Assets.xcassets */,
+				0D9DFD4D20120E670087DC1E /* AppDelegate.swift */,
 				0D9DFD4F20120E670087DC1E /* LaunchScreen.storyboard */,
 				0D9DFD5120120E670087DC1E /* Main.storyboard */,
 				0D9DFD5320120E670087DC1E /* Info.plist */,
@@ -99,22 +105,17 @@
 		0D9DFD5520120F030087DC1E /* MSFlightMapView */ = {
 			isa = PBXGroup;
 			children = (
-				0D9DFD6020120FA50087DC1E /* Assets */,
-				0D9DFD5A20120F030087DC1E /* MSFlight.swift */,
-				0D9DFD5B20120F030087DC1E /* MSFlightView.swift */,
-				0D9DFD73201245D00087DC1E /* MSFlightMapView.swift */,
+				0D2484B221B5489C00B8DE42 /* Assets.xcassets */,
+				0D2484B421B559AB00B8DE42 /* MSFlight.swift */,
+				0D2484A921B53DDE00B8DE42 /* MSFlightMapView.swift */,
+				0D2484AB21B53E6B00B8DE42 /* MSMarkerViewBuilder.swift */,
+				0D2484A521B51B8000B8DE42 /* MSMarkerAnimation.swift */,
+				0D2484B621B69A8B00B8DE42 /* MSPathBuilder.swift */,
+				0D2484A721B51BB600B8DE42 /* Bearing.swift */,
+				0D2484B021B542A000B8DE42 /* UIImage+Fill.swift */,
+				0D2484AE21B53EC000B8DE42 /* MSConstants.swift */,
 			);
 			path = MSFlightMapView;
-			sourceTree = "<group>";
-		};
-		0D9DFD6020120FA50087DC1E /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				0D9DFD6120120FA50087DC1E /* airplaneicon.png */,
-				0D9DFD6220120FA50087DC1E /* airplaneicon@2x.png */,
-				0D9DFD6320120FA50087DC1E /* airplaneicon@3x.png */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		DF31F01008BF5399E7AA9F0C /* Pods */ = {
@@ -190,11 +191,9 @@
 			files = (
 				0D9DFD6E2012136F0087DC1E /* Main.storyboard in Resources */,
 				0D9DFD6A201213650087DC1E /* Info.plist in Resources */,
-				0D9DFD66201212010087DC1E /* airplaneicon.png in Resources */,
 				0D9DFD702012148C0087DC1E /* style.json in Resources */,
-				0D9DFD67201212010087DC1E /* airplaneicon@2x.png in Resources */,
 				0D9DFD6D2012136D0087DC1E /* LaunchScreen.storyboard in Resources */,
-				0D9DFD68201212010087DC1E /* airplaneicon@3x.png in Resources */,
+				0D2484B321B5489C00B8DE42 /* Assets.xcassets in Resources */,
 				0D9DFD6C201213670087DC1E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,11 +253,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D9DFD74201245D00087DC1E /* MSFlightMapView.swift in Sources */,
+				0D2484AC21B53E6B00B8DE42 /* MSMarkerViewBuilder.swift in Sources */,
+				0D2484A821B51BB600B8DE42 /* Bearing.swift in Sources */,
 				0D9DFD69201213650087DC1E /* AppDelegate.swift in Sources */,
-				0D9DFD65201211FB0087DC1E /* MSFlightView.swift in Sources */,
+				0D2484A621B51B8000B8DE42 /* MSMarkerAnimation.swift in Sources */,
+				0D2484AA21B53DDE00B8DE42 /* MSFlightMapView.swift in Sources */,
+				0D2484B521B559AB00B8DE42 /* MSFlight.swift in Sources */,
+				0D2484B121B542A000B8DE42 /* UIImage+Fill.swift in Sources */,
 				0D9DFD6B201213650087DC1E /* ViewController.swift in Sources */,
-				0D9DFD64201211F90087DC1E /* MSFlight.swift in Sources */,
+				0D2484AF21B53EC000B8DE42 /* MSConstants.swift in Sources */,
+				0D2484B721B69A8B00B8DE42 /* MSPathBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
