@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'MSFlightMapView'
-s.version          = '0.1.3'
+s.version          = '0.2.0'
 s.summary          = 'Flight animation on Google Maps'
 
 s.description      = <<-DESC
@@ -13,7 +13,7 @@ s.author           = { 'Muhammad Abdul Subhan' => 'subhan.mps@gmail.com' }
 s.source           = { :git => 'https://github.com/mabdulsubhan/MSFlightMapView.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '10.0'
-s.source_files = 'MSFlightMapView/MSFlightMapView/*'
+s.source_files = 'MSFlightMapView/MSFlightMapView/**/*'
 
 s.static_framework = true
 s.dependency 'GoogleMaps'
