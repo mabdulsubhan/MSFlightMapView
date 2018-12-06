@@ -14,7 +14,7 @@ s.source           = { :git => 'https://github.com/mabdulsubhan/MSFlightMapView.
 
 s.ios.deployment_target = '10.0'
 s.source_files = 'MSFlightMapView/MSFlightMapView/**/*'
-s.resources = 'MSFlightMapView/MSFlightMapView/Assets.xcassets/*'
+s.resources = 'MSFlightMapView/MSFlightMapView/Assets.xcassets/**/*'
 
 s.static_framework = true
 s.dependency 'GoogleMaps'
