@@ -13,7 +13,7 @@ s.author           = { 'Muhammad Abdul Subhan' => 'subhan.mps@gmail.com' }
 s.source           = { :git => 'https://github.com/mabdulsubhan/MSFlightMapView.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '10.0'
-s.source_files = 'MSFlightMapView/MSFlightMapView/**/*'
+s.source_files = 'MSFlightMapView/MSFlightMapView/**/*.{h,m,swift}'
 s.resources = 'MSFlightMapView/MSFlightMapView/Assets.xcassets/**/*'
 
 s.static_framework = true
