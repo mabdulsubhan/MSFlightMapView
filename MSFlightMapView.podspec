@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'MSFlightMapView'
-s.version          = '0.2.0'
+s.version          = '0.2.1'
 s.summary          = 'Flight animation on Google Maps'
 
 s.description      = <<-DESC
